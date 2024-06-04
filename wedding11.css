@@ -12,14 +12,15 @@ body {
     background: #000000;
     
 }
+
 .menu{
     position:relative;
    width:145px;
     height:200px;
     display:flex;
     align-items:center;
-   margin-left:-10%;
-   margin-bottom:-39%;
+   margin-left:88%;
+   margin-top:-2%;
     justify-content:center;
   }
   .menu .toggle{
@@ -32,13 +33,13 @@ body {
     display:flex;
     align-items:center;
     justify-content:center;
-    color:#ac0e0e;
+    color:#b22c03c0;
     font-size:2rem;
     cursor:pointer;
     transition:1.25s;
     margin-right:-145%;
     z-index:5;
-    box-shadow: 0px 0px 12px 9px rgb(207, 10, 10);
+    box-shadow: 0px 0px 12px 8px rgb(234, 82, 7);
   }
   .menu.active .toggle{
     transform:rotate(360deg);
@@ -49,7 +50,7 @@ body {
   .menu li{
     position:absolute;
     left:0;
-   
+  
     list-style:none;
     transition:0.5s;
     transform:rotate(calc(185deg/8 * var(--i)));
@@ -85,13 +86,10 @@ body {
     box-shadow:0 0 0 2px var(--clr),
       0 0 0 6px #fff;
   }
-  nav{
+nav{
     height: 80px;
     width: 100%;
  
-}
-.hr{
-    width: 81%;
 }
 nav img{
     line-height: 80px;
@@ -107,6 +105,9 @@ nav img{
     cursor: default;
     font-weight: 600;
     font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.hr{
+    width: 81%;
 }
 nav ul{
     float: right;
@@ -158,83 +159,63 @@ ul li a:hover{
 }
 
 .home {
-    position: relative;
+    background: url(images/nnewwed.jpg) no-repeat;
+    background-size: cover;
     width: 100%;
     justify-content: space-between;
     height: 100vh;
-    background: url(images/comm.jpg) no-repeat;
-    background-size: cover;
     background-position: center;
-    display: flex;
     align-items: center;
     padding: 50px 5% 0;
 }
 
 .home-content {
-    margin-left: 110px;
+    margin-left: 100px;
     text-align: center;
-    width: 100%;
+    margin-top: 30%;
 }
 .home-content h3 {
-    text-align: left;
-    font-size: 80px; 
+    font-size: 8.5rem;
+    text-align: center;
+    /* font-size: 80px; */
     font-weight: 700;
-    margin-left: -1%;
-    font-size: 4.3rem;
-    text-transform: capitalize;
-    font-weight: 600;
-    letter-spacing: 0.2rem;
-    text-shadow: 1px 1px 10px  rgb(203, 52, 11),
-    1px 1px 8px #012290f7;
-    margin-top: -5%;
-    
-        
-
+    margin-left: 3.5%;
     
 }
 .home-content p{
     font-size: 3.5rem;
     text-transform: capitalize;
     font-weight: 600;
-   margin-top: 2%;
-   margin-left: -6%;
+   
     letter-spacing: 0.2rem;
     text-shadow: 1px 1px 10px rgb(203, 52, 11),
     1px 1px 8px #012290f7;
    
 
 }
+.home-content h1:nth-of-type(2) {
+    margin-bottom: 30px;
+    animation:slideTop 1s ease forwards;
+    animation-delay:0.7s
 
-.home-content h1 span{
-    color:#0ef
- 
 }
 
 
 
-.home-sci a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 45px;
-    height: 45px;
-    background: transparent;
-    border: 2px solid #0def;
-    border-radius: 50%;
-    font-size: 30px;
-    color: #0def;
-    text-decoration: none;
-    transition: .5s;
-   
-    margin: 30px 15px 30px 0;
-   
+.home-content h3 {
+    font-size: 4.5rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    text-shadow: 1px 1px 10px  rgb(203, 52, 11),
+    1px 1px 8px #012290f7;
+    margin-top: -5%;
+
+    
 }
 
-.home-sci a:hover {
-    background: #0def;
-    color: #081b29;
-    box-shadow: 0 0 20px #0def;
-}
+
+
 
 
 #services{
@@ -242,7 +223,7 @@ ul li a:hover{
     font-size: 20px;
     line-height: 1.4;
     margin-bottom: 8rem;
-    background-color: #000;
+    background-color: #000000;
 
 }
 .sub-title{
@@ -271,7 +252,7 @@ ul li a:hover{
     margin-right: 5%;
 }
 .services-list1 div{
-    background-color: transparent;
+    background-color: blue;
     padding: 40px;
     font-size: 13px;
     font-weight: 13px;
@@ -326,15 +307,14 @@ ul li a:hover{
     transition: background 0.5s,transform 0.5s;
     box-shadow: 1px 1px 20px #012290f7,
     1px 1px 40px #012290f7;
-    background:url(images/evento\ logo.png) no-repeat;
+    background:url(images/evento\ logo.png)no-repeat;
     background-position: right;
     mix-blend-mode: hard-light;
-    transition: background 0.5s,transform 0.5s;
+    margin-right: 15px;
+    margin-bottom: 25%;
     box-shadow: 0px 0px  70px #0935c6f7,
     0px 0px  50px #0834c5f7,
     0px 0px 0px 10px #042590f7;
-    margin-right: 15px;
-   
 }
 
 .services-list2 div i{
@@ -353,50 +333,77 @@ ul li a:hover{
     margin-top: 20px;
     display: inline-block;
 }
-.more-info span{
-    background-color: #b82151;
-    padding:8px;
+.make img{
+    border-radius: 50%;
+}
+#portfolio{
+    padding:20px 0;
+}
+.work-list{
+    display:grid;
+    grid-template-columns:440px 440px 440px ;
+    grid-gap: 20px;
+}
+.container .sub-title{
+    margin-top:-10%
+}
+.work{
     border-radius: 10px;
-    color:#0de7ca;
-    cursor: pointer;
+    position: relative;
+    overflow:hidden;
+ 
+}
+.work-list{
+    margin-left:-3.5%;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display:block;
 
 }
-.more-info span:hover{
-    color: white;
-    background-color: #3d1723 ;
-}
-.more-info{
+
+.layer{
+    width:100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0,8),#b8345e);
+    border-radius: 10px;
+    position: absolute;
+    left:0;
+    bottom:0;
+    overflow:hidden;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 30%;
     text-align: center;
-    font-size: 18px;
+    font-size:20px;
 }
 
-.more-info a{
-    text-decoration: none;
+ img{
+    transform: scale(1.1);
 }
-button.reg{
-    font-size: 30px;
-   margin-left: 43%;
-  margin-top: -13%;
-  margin-bottom: 4%;
-}
-button:hover{
-    color: white;
-    background-color: #915f0f ;
-}
-.reg{
-   
-    color: white;
-   
-    text-decoration: none;
-    background-color:rgb(253, 162, 6);
-    padding:10px;
-    border-radius: 10px;
-    color:#f8f8f8;
-    cursor: pointer;
 
+.layer{
+    height: 100%;
 }
-.row{
-    margin-top: -8%;
+.work .ahm{
+    height: 420px;
+}
+.work .su{
+    width:600px;
+}
+.work .ahm1{
+ height: 350px;
+}
+.work .su1{
+  height: 350px;
+}
+.work .vad{
+height: 400px;
+}
+.work .vad1{
+  height: 350px;
 }
 .gallary{
     width:900px;
@@ -406,19 +413,17 @@ button:hover{
 }
 .gallary div{
     width:100%;
-  
     display: grid;
-    grid-template-columns:auto auto auto;
+    grid-template-columns:260px 260px 250px ;
     grid-gap:50px;
     padding: 20px;
     flex: none;
-    font-size:250px ;
     
   
   
 }
-.hr{
-    width: 81%;
+.gg{
+    color: #0ef;
 }
 .gallary div img{
     
@@ -439,7 +444,7 @@ button:hover{
     justify-content: center;
     margin: 1% auto;
     margin-bottom: 4%;
-    z-index: 500px;
+ z-index: 500px;
 }
 #backbtn,#nextbtn{
     width:60px;
@@ -452,20 +457,55 @@ button:hover{
     cursor: pointer;
     transform: scale(1.1)
 }
-.sub-title{
-    padding:3%;
+button.reg{
+    font-size: 30px;
+   margin-left: 45%;
+  margin-top: -10%;
+  margin-bottom: -3%;
+}
+button:hover{
+    color: white;
+    background-color: #915f0f ;
+}
+.amount span{
+    font-size: 30px;
+    padding:6px;
+    border-radius: 6px;
+   
+}
+.amount{
+   text-align: center;
+}
+.reg{
+   
+    color: white;
+   
+    text-decoration: none;
+    background-color:rgb(253, 162, 6);
+    padding:10px;
+    border-radius: 10px;
+    color:#f8f8f8;
+    cursor: pointer;
+
+}
+.sub-title3{
+
    text-align: center;
     
 }
+
 .contact-right{
   flex-basis: 60%;
    
 }
-
+.contact-left{
+    margin-bottom: 3%;
+}
 .contact-left p{
     margin-top: 30px;
     text-align: center;
     font-size: 30px;
+
 }
 
 .contact-left p i{
@@ -473,10 +513,8 @@ button:hover{
     
     font-size: 30px;
     margin-right: 7px;
-
-   
-
 }
+
 .sub-title2{
     margin-left: 30%;
 }
@@ -484,41 +522,8 @@ button:hover{
     margin-left: 5px;
     font-size: 35px;
 }
-.social-icons{
-    margin-top: 30px;
-    text-align: center;
-    margin-bottom: 3%;
-}
-.social-icons a{
-    text-decoration: none;
-    font-size: 35px;
-    margin-left: 15px;
-    margin-right:7px;
-    color:#ababab;
-    display: inline-block;
-    transition: transform 0.5s;
 
-}
-.social-icons a:hover{
-    color: #ff040f;
-    transform: translateY(-8px);
-}
-.btn-box{
-    background-color:rgb(253, 160, 6) ;
-    text-align: center;
-    font-size: 30px;
-    padding: 8px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    margin-top: 2%;
-    margin-right: 0%;
-    color: #fff;
-  }
-.btn-box:hover{
-    cursor: pointer;
-    color: #fff;
-    background-color: rgb(181, 116, 19);
-}
+
 form{
     text-align: center;
 }
@@ -535,6 +540,23 @@ form input,form textarea{
     font-size: 18px;
     border-radius: 6px;
 }
+.btn-box{
+  background-color: one;
+  background-color:rgb(253, 162, 6);
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  padding: 8px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  margin-top: 2%;
+}
+.btn-box:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: rgb(180, 119, 6);
+}
+
 
 #msg{
   font-size:25px;
@@ -575,7 +597,6 @@ padding-right: 3%;
     font-family: 'Satisfy', cursive;
     text-decoration: none;
 }
-
 @keyframes slideRight{
     0%{
         transform:translatex(-100px);
@@ -616,3 +637,33 @@ padding-right: 3%;
         opacity:1;
     }
  }
+ @media(max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width:100%;
+        height:100vh;
+        background: #2c3e50;
+        top:80px;
+        left:-100%;
+         text-align:center;
+         transition: .5s;
+    }
+    nav ul li{
+        display: block;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: white;
+    }
+    #check:checked ~ ul{
+        left:0;
+
+
+    }
+}

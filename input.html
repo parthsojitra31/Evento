@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="input.css">
+    <link rel="shortcut icon" type="x-icon" href="images\evento logo.png">
     <title>Registration</title>
 </head>
 <body>
@@ -11,7 +12,7 @@
         
     </script>
     <div class="container">
-    <form name="submit-to-google-sheet" method="get" action="registration-form">
+    <form name="submit-to-google-sheet" method="GET" action="https://formspree.io/f/xbjnbojb">
         <h1 class="main_heading">Registration Form</h1>
         <hr>
         <h2>Your Information</h2>
@@ -32,14 +33,14 @@
 </form>
 </div>
 
-  <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbz7dGhfrUGr0Kz1hhLaeXZ4yhmbRwXQ1rBzW1t5SSV0tVIOhj0U7nbotekBMFbukPM8ng/exec'
+  <!-- <script>
+    const scriptURL = 'https://formspree.io/f/xbjnbojb'
     const form = document.forms['submit-to-google-sheet']
   const  msg= document.getElementById("msg")
 
     form.addEventListener('submit', e => {
       e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      fetch(scriptURL, { method: 'GET', body: new FormData(form)})
         .then(response => {
             msg.innerHTML="Message sent successfully"
             setTimeout(function(){
@@ -50,6 +51,6 @@
         .catch(error => console.error('Error!', error.message))
     })
   </script>
-  <script src="temp.js"></script>
+  <script src="temp.js"></script> -->
 </body>
 </html>

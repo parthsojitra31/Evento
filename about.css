@@ -120,6 +120,41 @@ h4,h5{
     border-radius: 9px;
     
 }
+.foot{
+    background-color:#000000;
+
+}
+.foot li{
+    display: inline-block;
+    padding:1%;
+    font-size: 27px;
+    font-weight: 700;
+    cursor: pointer;
+    margin:20px;
+}
+
+.foot ul{
+    text-align: right;
+   
+}
+.foot img{
+    padding-top: 5px;
+    padding-left: 3%;
+    mix-blend-mode: hard-light;
+    
+}
+.foot p{
+padding-right: 3%;
+    float: right;
+    line-height: 80px;
+    font-size: 28px;
+    color: #fff;
+    font-weight: 700px;
+    font-family: 'Hind Madurai', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Satisfy', cursive;
+    text-decoration: none;
+}
 @keyframes slideTop{
     0%{
         transform:translateY(100px);
